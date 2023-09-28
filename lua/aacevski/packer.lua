@@ -27,6 +27,7 @@ return require("packer").startup(function(use)
       })
     end,
   })
+
   use({
     "nvim-telescope/telescope.nvim",
     tag = "0.1.1",
@@ -46,7 +47,9 @@ return require("packer").startup(function(use)
 
   use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 
-  use({ "catppuccin/nvim", as = "catppuccin" })
+  use 'navarasu/onedark.nvim'
+  use 'lewis6991/gitsigns.nvim'
+
   use({
     "roobert/tailwindcss-colorizer-cmp.nvim",
     config = function()
